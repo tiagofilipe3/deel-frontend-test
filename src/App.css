@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 26px;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+.input {
+  width: 400px;
+}
+
+.autocompleteWrapper {
+  position: relative;
+  display: flex;
+  align-self: center;
+}

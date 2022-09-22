@@ -1,0 +1,19 @@
+.suggestionsBox {
+    position: absolute;
+    top: 22px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.suggestion {
+    display: flex;
+    border: 1px solid #8d8585;
+    padding: 5px;
+    text-align: left;
+    white-space: pre;
+}
+
+.highlight {
+    font-weight: bolder;
+}
