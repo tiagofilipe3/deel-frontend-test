@@ -7,4 +7,9 @@ type TProducts = {
   products: TProduct[]
 }
 
-export type { TProduct, TProducts }
+type TSuggestions = {
+  suggestions: TProduct[]
+  highlight: string
+}
+
+export type { TProduct, TProducts, TSuggestions }

@@ -1,11 +1,6 @@
 import React from 'react'
 import './index.css'
-import { TProduct } from '../types'
-
-type TSuggestions = {
-  suggestions: TProduct[]
-  highlight: string
-}
+import { TSuggestions } from '../types'
 
 const Suggestions = ({ suggestions, highlight }: TSuggestions) => {
   return (
