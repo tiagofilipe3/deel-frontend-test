@@ -39,27 +39,12 @@ const App = () => {
     setSuggestions(suggestions)
   }
 
-  const withStyles = (Component) => {
-    const HOC = (props) => {
-      const style = { color: 'red' }
-      return <Component style={style} {...props} />
-    }
-
-    HOC.displayName = 'HOC'
-    return HOC
-  }
-
-  const Text = (props) => <p {...props}>Hello World</p>
-
-  const StyledText = withStyles(Text)
-
   return (
     <div className="App">
       <div className="title">Auto complete</div>
       <div className="autocompleteWrapper">
         <input className="input" value={search} onChange={handleSearch} />
         {open && <Suggestions suggestions={suggestions} highlight={search} />}
-        <StyledText />
       </div>
     </div>
   )
